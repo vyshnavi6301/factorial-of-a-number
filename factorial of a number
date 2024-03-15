@@ -1,0 +1,14 @@
+def is_factorial(n):
+    factorial = 1
+    i = 1
+    while factorial < n:
+        i += 1
+        factorial *= i
+    return factorial == n
+
+number = int(input("Enter a number to check if it's a factorial or not: "))
+
+if is_factorial(number):
+    print(number, "is a factorial number.")
+else:
+    print(number, "is not a factorial number.")
